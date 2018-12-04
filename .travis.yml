@@ -1,6 +1,6 @@
 # 指定语言为node_js，nodejs版本stable
 language: node_js
-node_js: stable
+node_js: 9.8.0
 
 # 指定构建的分支
 branches:
