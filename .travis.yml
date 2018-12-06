@@ -32,5 +32,4 @@ after_success:
   - git config --global user.name "Bruce"
   - git config --global user.email "zhushuai026@gmail.com"
   # 替换同目录下的_config.yml文件中GH_TOKEN字符串为travis后台配置的变量
-  - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy

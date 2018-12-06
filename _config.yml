@@ -95,8 +95,8 @@ baidu_url_submit:
 deploy:
 - type: git
   repo: 
-    github: https://GH_TOKEN@github.com/BestBurning/BestBurning.github.io.git
-    coding: git@git.coding.net:BestBurning/BestBurning.git
+    github: https://${GH_TOKEN}@github.com/BestBurning/BestBurning.github.io.git
+    coding: https://BestBurning:${CO_TOKEN}@git.coding.net/BestBurning/BestBurning.git
   branch: master
   message:  
 - type: baidu_url_submitter
