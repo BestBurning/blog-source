@@ -24,6 +24,6 @@
     "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.9.0"
   }
 }
