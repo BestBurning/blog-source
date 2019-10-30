@@ -1,8 +1,11 @@
 ---
 title: JDK版本管理-jEnv
-tags: 'JDK,jEnv'
+tags: 
+  - JDK
+  - jEnv
 comments: true
-categories: [technology]
+categories: 
+  - technology
 toc: false
 keywords: 'JDK,jEnv,版本管理,jenv'
 date: 2019-10-30 17:27:32
