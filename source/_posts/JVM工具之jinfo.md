@@ -12,10 +12,10 @@ date: 2019-10-30 21:24:20
 ---
 
 
-jinfo是JDK自带的工具,可以：
+[jinfo](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jinfo.html#BCGEBFDD)是JDK自带的工具,可以：
   - 查看Java程序的扩展参数
   - 动态修改JVM参数
-  - 在系统崩溃时从core文件中得知Java程序的配置信息。
+  - 在系统崩溃时从core文件中得知Java程序的配置信息
 
 ## 命令
 
@@ -45,12 +45,12 @@ where <option> is one of:
 
 ### Option
   
-  - -flag <name> 输出对应名称的参数
-  - -flag [+|-]<name> 动态开启或者关闭对应名称的参数
-  - -flag <name>=<value> 动态设定对应名称的参数
-  - -flags 输出全部的参数
-  - -sysprops 输出系统属性
-  - <no option> 输出全部的参数和系统属性
+  - `-flag <name>` 输出对应名称的参数
+  - `-flag [+|-]<name>` 动态开启或者关闭对应名称的参数
+  - `-flag <name>=<value>` 动态设定对应名称的参数
+  - `-flags` 输出全部的参数
+  - `-sysprops` 输出系统属性
+  - `<no option>` 输出全部的参数和系统属性
 
 ### Code
 
