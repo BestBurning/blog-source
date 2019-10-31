@@ -6,9 +6,9 @@ categories:
   - technology
 toc: false
 keywords: 'JVM内存模型,JDK1.8,JVM'
-originContent: ''
 date: 2019-10-31 17:58:13
 ---
+
 
 > 多了解些底层总归是让自己向着真相靠近
 
@@ -44,8 +44,8 @@ JVM内存模型主要如上图所示
 线程私有，功能与Java虚拟机栈十分相似，区别在于其服务于虚拟机使用的native方法。
 
 ### 堆
-![堆](https://img-blog.csdn.net/2018031000051841?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYnJ1Y2UxMjg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
+![堆.jpeg](http://images.di1shuai.com/FkgmnVA6Eikkj6L51Tti-STkyIy9)
 线程共享，堆的主要作用是存放对象实例，也是管理最复杂的一个区域，空间分配如下：
   - Young Generation (1/3堆空间)
     - Eden (8/10 Young)
