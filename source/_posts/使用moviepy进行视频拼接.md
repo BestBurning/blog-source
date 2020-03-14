@@ -1,6 +1,8 @@
 ---
 title: 使用moviepy进行视频拼接
-tags: moviepy
+tags: 
+  - moviepy
+  - python
 comments: true
 categories: technology
 toc: false
