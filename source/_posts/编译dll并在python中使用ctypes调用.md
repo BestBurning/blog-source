@@ -14,7 +14,7 @@ date: 2020-03-17 15:01:05
 ## 编译dll
 
 1. 打开[Visual Studio 2019](https://visualstudio.microsoft.com/zh-hans/vs/)创建**动态链接库dll**项目
-![dll.png](http://images.di1shuai.com/FpRIlGlU-K1aI_U4wMB5-yMZE9NO)
+![创建dll项目](http://images.di1shuai.com/FpRIlGlU-K1aI_U4wMB5-yMZE9NO)
 2. 删掉`framework.h`、`dllman.cpp`
 ![删除前](http://images.di1shuai.com/Fl5PZ99hx10UwApWJtZkGulC1s7v)
 ![删除后](http://images.di1shuai.com/FhJrLX-LQeQGeThAZJQPPpW-Ov3U)
@@ -37,11 +37,11 @@ int __cdecl  add(int a, int b)
 }
 ```
 5. 解决方案 -> 属性，平台为`x64`,配置管理器中也为`x64`
-![解决方案.png](http://images.di1shuai.com/FtfOzKDjpjX5nOYKzmxVx-df62OV)
-![配置管理器.png](http://images.di1shuai.com/FmhlqS-z_d4DS1T4AFMprVQF7gNz)
+![解决方案](http://images.di1shuai.com/FtfOzKDjpjX5nOYKzmxVx-df62OV)
+![配置管理器](http://images.di1shuai.com/FmhlqS-z_d4DS1T4AFMprVQF7gNz)
 6. 生成 -> 生成解决方案
-![生成解决方案.png](http://images.di1shuai.com/FqhZMNn3YZPSdUU4dg-h0b4GgfEv)
-![dll路径.png](http://images.di1shuai.com/FlvWlrjgdS0yJlroVawrCTf95A0M)
+![生成解决方案](http://images.di1shuai.com/FqhZMNn3YZPSdUU4dg-h0b4GgfEv)
+![dll路径](http://images.di1shuai.com/FlvWlrjgdS0yJlroVawrCTf95A0M)
 
 ## 使用python中的ctypes调用
 ```

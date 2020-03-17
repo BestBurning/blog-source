@@ -38,4 +38,5 @@ after_success:
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - sed -i "s/CO_USER/${CO_USER}/g" ./_config.yml
   - sed -i "s/CO_TOKEN/${CO_TOKEN}/g" ./_config.yml
+  - sed -i "s/BD_TOKEN/${BD_TOKEN}/g" ./_config.yml
   - hexo deploy
