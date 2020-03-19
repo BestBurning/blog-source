@@ -69,8 +69,8 @@ def shot():
 #### 首先判断是否是在战斗状态(进入战斗才会弹窗)
 
 战斗状态的判断是依据了梦幻窗口最右侧**战斗标识**，不同的界面风格标识的颜色是**不同**的，我用的是**暖风**界面风格
-![Inkedmhxy_LI.jpg](http://images.di1shuai.com/Fg8Btk_CGNzOxFuoZ25BCgI4Nrbg)
-![fighting_flag.jpg](http://images.di1shuai.com/FpwXJGD-ZAVQWmpJQCXpC55eU8t6)
+![](http://images.di1shuai.com/Fg8Btk_CGNzOxFuoZ25BCgI4Nrbg)
+![](http://images.di1shuai.com/FpwXJGD-ZAVQWmpJQCXpC55eU8t6)
 截取相同区域的图片使用`opencv`与战斗标识进行**相似性判断**，如果相似度大于`%95`则判定为**战斗状态**
 
 ```
