@@ -1,6 +1,8 @@
 ---
 title: tensorflow实践：梦幻西游人物弹窗识别（一）
-tags: tensorflow
+tags: 
+- tensorflow
+- 梦幻西游
 comments: true
 categories: 
 - technology
@@ -34,7 +36,7 @@ date: 2020-03-19 12:31:34
 ![](http://images.di1shuai.com/FoRMjFWNw0ixNK6tYIwKADSQi-UX)
 ![](http://images.di1shuai.com/FsGV0OkNfQuog-NtJx33JRAC-IlA)
 
-去我们训练的**模型**中去**预测**，
+用切好的图去我们训练的**模型**中**预测**，
 最后**点击可能性最大**的**区域**就好啦
 
 ![](http://images.di1shuai.com/Fl91DfaNDpCfVTf_KfZ17oaZcGcc)

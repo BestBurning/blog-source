@@ -1,6 +1,8 @@
 ---
 title: tensorflow实践：梦幻西游人物弹窗识别（二）
-tags: tensorflow
+tags: 
+- tensorflow
+- 梦幻西游
 comments: true
 categories: 
 - technology
@@ -9,8 +11,6 @@ keywords: tensorflow,梦幻西游,弹窗识别,python
 date: 2020-03-19 17:22:59
 ---
 
-
-## 具体实现
 由上一篇的思路我们可以定义以下的具体实现步骤
 ![](http://images.di1shuai.com/FkMKDBPbKXGq3ubgfeTzt2Vtcp-N)
 
