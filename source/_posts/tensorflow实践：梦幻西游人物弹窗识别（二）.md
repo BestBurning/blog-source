@@ -6,7 +6,7 @@ tags:
 comments: true
 categories: 
 - technology
-toc: false
+toc: true
 keywords: tensorflow,梦幻西游,弹窗识别,python
 date: 2020-03-19 17:22:59
 ---
@@ -66,8 +66,8 @@ def shot():
 得到屏幕截图后，我们将对截图进行切分
 ![](http://images.di1shuai.com/FuRjXMN4Cgpm9rGJe-patSpt18d6)
 
-#### 首先判断是否是在战斗状态(进入战斗才会弹窗)
-
+#### 战斗状态判断
+因为进入**战斗**才会弹窗，所以首先对战斗状态进行判断
 战斗状态的判断是依据了梦幻窗口最右侧**战斗标识**，不同的界面风格标识的颜色是**不同**的，我用的是**暖风**界面风格
 ![](http://images.di1shuai.com/Fg8Btk_CGNzOxFuoZ25BCgI4Nrbg)
 ![](http://images.di1shuai.com/FpwXJGD-ZAVQWmpJQCXpC55eU8t6)
