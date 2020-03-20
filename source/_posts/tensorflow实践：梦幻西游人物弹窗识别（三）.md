@@ -16,7 +16,7 @@ date: 2020-03-20 15:34:25
 终于来到了预测的时候了，我们将按以下思路进行
 ![](http://images.di1shuai.com/FpEUuMIj7eUHPEXYd4RNLpgy0l7Y)
 
-本篇将围绕**训练集准备、模型训练、模型读取**讲述[data_model.py](https://github.com/BestBurning/mhxy/blob/master/data_model.py)代码
+本篇将围绕**训练集准备、模型训练、保存、读取、预测**讲述[data_model.py](https://github.com/BestBurning/mhxy/blob/master/data_model.py)代码
 
 ### 环境描述
 [Windows](https://www.microsoft.com/zh-cn/software-download/windows10)
