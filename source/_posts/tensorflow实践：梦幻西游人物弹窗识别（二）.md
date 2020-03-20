@@ -219,6 +219,12 @@ def popup_sub_crop():
     print(f'没有弹框')
     return False
 ```
+路径如下
+```
+images
+  |- sub
+      |- pop_sub.jpg  
+```
 
 #### 再切出单个人物
 单个人物宽高为`90 x 120`
@@ -233,6 +239,16 @@ def crop_4():
         shape = (w*i, 0, w*(i+1), h)
         crop(c.popup_sub_img_path,c.crop_4_img_paths[i],shape)
 ```
+路径如下
+```
+images
+  |- sub
+      |- 1.jpg
+      |- 2.jpg  
+      |- 3.jpg
+      |- 4.jpg
+```
+
 ---
 到这里，**窗口捕获、屏幕截图、截图切分**部分就已经完毕，我们再来看一下进度
 ![](http://images.di1shuai.com/FtKWasG4kAAin4mpYZvkkLu8Ohsl)
