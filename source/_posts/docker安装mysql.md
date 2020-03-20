@@ -1,6 +1,8 @@
 ---
 title: docker安装mysql
-tags: MySQL
+tags: 
+- MySQL
+- Docker
 comments: true
 categories: 
   - technology

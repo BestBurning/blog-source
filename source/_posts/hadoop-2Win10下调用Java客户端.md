@@ -5,7 +5,7 @@ date: 2017-2-12
 keywords: hadoop,Java,win10
 tags:
 - hadoop
-- bigdata
+- Bigdata
 categories:
 - technology
 

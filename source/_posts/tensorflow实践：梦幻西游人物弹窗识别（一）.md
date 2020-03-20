@@ -7,7 +7,7 @@ comments: true
 categories: 
 - technology
 toc: true
-keywords: tensorflow,梦幻西游,弹窗识别,python
+keywords: tensorflow,梦幻西游,弹窗识别,python,自动点击
 date: 2020-03-19 12:31:34
 ---
 

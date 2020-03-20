@@ -7,7 +7,7 @@ comments: true
 categories: 
 - technology
 toc: true
-keywords: tensorflow,梦幻西游,弹窗识别,python
+keywords: tensorflow,梦幻西游,弹窗识别,python,自动点击
 date: 2020-03-19 17:22:59
 ---
 
@@ -122,7 +122,7 @@ def crop(source_path,target_path,shape):
 ![](http://images.di1shuai.com/Fh4cAxJOIYd09wqsTIWPV9-q4MKv)
 
 
-使用 [OpenCV Template Matching](https://docs.opencv.org/4.2.0/d4/dc6/tutorial_py_template_matching.html) 对梦幻窗口进行匹配，并返回最匹配(得分最高)的区域
+使用 [OpenCV Template Matching](https://docs.opencv.org/4.2.0/d4/dc6/tutorial_py_template_matching.html) 对梦幻窗口进行匹配，并返回**最匹配**(**得分最高**)的区域
 ```
 def popup_sub_crop():
     util.log_title('弹窗判断')

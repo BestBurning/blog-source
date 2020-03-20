@@ -6,7 +6,7 @@ keywords: hadoop,mapreduce,wordcount
 tags:
 - hadoop
 - mapreduce
-- bigdata
+- Bigdata
 categories:
 - technology
 

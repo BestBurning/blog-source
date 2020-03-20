@@ -18,7 +18,7 @@ videos
    | merge1
        | video1.mp4    
        | video2.mp4
-	| video3.mp4
+	 | video3.mp4
    | merge2
        | video1.mp4
        | video2.mp4

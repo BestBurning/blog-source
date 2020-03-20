@@ -17,6 +17,7 @@ cache:
 before_install:
   - npm install -g hexo-cli
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./.gitmodules
+  - sed -i "s/BD_TOKEN/${BD_TOKEN}/g" ./_config.yml
   - git submodule init
   - git submodule update
 
@@ -38,5 +39,5 @@ after_success:
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - sed -i "s/CO_USER/${CO_USER}/g" ./_config.yml
   - sed -i "s/CO_TOKEN/${CO_TOKEN}/g" ./_config.yml
-  - sed -i "s/BD_TOKEN/${BD_TOKEN}/g" ./_config.yml
+  
   - hexo deploy
