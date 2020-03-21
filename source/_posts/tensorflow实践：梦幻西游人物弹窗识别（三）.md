@@ -436,7 +436,7 @@ Relying on driver to perform ptx compilation. This message will be only logged o
 
 ```
 
-![15847588517857.jpg](http://images.di1shuai.com/FhafeoF-EUhcVGl_l_lxRrzNHytm)
+![](http://images.di1shuai.com/FhafeoF-EUhcVGl_l_lxRrzNHytm)
 
 ---
 
