@@ -5,8 +5,7 @@ tags:
 - 梦幻西游
 comments: true
 categories: 
-- tensorflow
-- 梦幻西游
+- technology
 toc: true
 keywords: tensorflow,梦幻西游,弹窗识别,python,自动点击,图像识别
 date: 2020-03-20 15:34:25
@@ -414,7 +413,7 @@ def load_and_preprocess_image(path):
 ```
 `model.predict(imgs)`预测了一组照片，返回值为一组照片的**可能行**数组，值越**小(负)**越倾向于**front**，值越**大(正)**越倾向于**others**
 
-于是我们组合模型读取并预测[上一篇文章](https://di1shuai.com/tensorflow%E5%AE%9E%E8%B7%B5%EF%BC%9A%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E4%BA%BA%E7%89%A9%E5%BC%B9%E7%AA%97%E8%AF%86%E5%88%AB%EF%BC%88%E4%BA%8C%EF%BC%89.html)已经切出来的一组照片
+于是我们**读取模型**并**预测**[上一篇文章](https://di1shuai.com/tensorflow%E5%AE%9E%E8%B7%B5%EF%BC%9A%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E4%BA%BA%E7%89%A9%E5%BC%B9%E7%AA%97%E8%AF%86%E5%88%AB%EF%BC%88%E4%BA%8C%EF%BC%89.html)已经切出来的一组照片
 ```
 model_load()
 model_predict(c.crop_4_img_paths)
@@ -436,6 +435,9 @@ Relying on driver to perform ptx compilation. This message will be only logged o
 --------   结束    ----------
 
 ```
+
+![15847588517857.jpg](http://images.di1shuai.com/FhafeoF-EUhcVGl_l_lxRrzNHytm)
+
 ---
 
 到这里，我们关于**预测**部分的内容就已经完毕，回头看看我们走过的路

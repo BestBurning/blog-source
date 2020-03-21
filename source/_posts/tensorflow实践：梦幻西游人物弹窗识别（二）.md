@@ -59,7 +59,13 @@ def shot():
         return False
     return True
 ```
-于是我们得到了一张全屏截图以及一张梦幻的窗口截图
+于是我们在路径
+```
+images
+  |- desktop.jpg
+  |- mhxy.jpg
+```
+得了一张**全屏**截图以及一张梦幻的**窗口**截图
 
 ### 截图切分
 
@@ -71,8 +77,14 @@ def shot():
 战斗状态的判断是依据了梦幻窗口最右侧**战斗标识**，不同的界面风格标识的颜色是**不同**的，我用的是**暖风**界面风格
 ![](http://images.di1shuai.com/Fg8Btk_CGNzOxFuoZ25BCgI4Nrbg)
 ![](http://images.di1shuai.com/FpwXJGD-ZAVQWmpJQCXpC55eU8t6)
-截取相同区域的图片使用`opencv`与战斗标识进行**相似性判断**，如果相似度大于`%95`则判定为**战斗状态**
+战斗标识路径
+```
+images
+  |- flag
+      |- fighting_flag.jpg
+```
 
+截取相同区域的图片使用`opencv`与战斗标识进行**相似性判断**，如果相似度大于`%95`则判定为**战斗状态**
 ```
 # 战斗截图
 def fight_crop():
@@ -111,6 +123,13 @@ def crop(source_path,target_path,shape):
         fighting_flag_img.save(target_path)
         return True    
 ```
+截取战斗标识相同区域的路径为
+```
+images
+  |- sub
+      |- fighting.jpg
+```
+
 
 #### 判断是否弹窗
 
@@ -249,6 +268,62 @@ images
       |- 4.jpg
 ```
 
+#### 组合
+
+于是我们将以上步骤组合起来
+```
+def task():
+
+    print()
+    if shot():                                                          ## 截图
+        if image_check(c.img_sc_path,c.screen_size):                    ## 检查截图大小
+            fight_crop()                                                ## 战斗标识截图
+            if is_fight():                                              ## 判断是否在战斗
+                if popup_sub_crop():                                    ## 弹窗识别 与 人物区域切出
+                    if image_check(c.popup_sub_img_path,c.sub_size):    ## 弹窗人物截图检查
+                        crop_4()                                        ## 弹窗人物切分                   
+                        print()
+                        return True
+    return False
+
+
+if __name__ == '__main__':
+    task()
+
+```
+```
+--------   截图    ----------
+
+梦幻西游 ONLINE - (xxxxxxx - xxxxx[xxxxx])
+img_desktop save to -> d:\gitRepo\mhxy\images\desktop.jpg
+img_mhxy save to -> d:\gitRepo\mhxy\images\mhxy.jpg
+
+--------   截图检查    ----------
+
+        size=(812, 663)     ok
+
+--------   战斗标识截图    ----------
+
+
+--------   状态判断    ----------
+
+SSIM: 0.9955642623257255
+战斗 状态
+
+--------   弹窗判断    ----------
+
+{(277, 221, 457, 234): (1, 0), (334, 223, 430, 237): (4, 1)}
+最大区域 (334, 223, 430, 237) 最终得分为 4
+弹框区域  (252, 252, 612, 372)
+
+--------   截图检查    ----------
+
+        size=(360, 120)     ok
+
+--------   弹窗人物切分    ----------
+
+
+```
 ---
 到这里，**窗口捕获、屏幕截图、截图切分**部分就已经完毕，我们再来看一下进度
 ![](http://images.di1shuai.com/FtKWasG4kAAin4mpYZvkkLu8Ohsl)
