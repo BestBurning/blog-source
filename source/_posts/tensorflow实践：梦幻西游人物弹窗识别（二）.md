@@ -339,6 +339,9 @@ SSIM: 0.9955642623257255
 
 ```
 ---
+
+### 回顾
+
 到这里，**窗口捕获、屏幕截图、截图切分**部分就已经完毕，我们再来看一下进度
 ![](http://images.di1shuai.com/FtKWasG4kAAin4mpYZvkkLu8Ohsl)
 是不是胜利指日可待！

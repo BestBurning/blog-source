@@ -7,7 +7,7 @@ comments: true
 categories: 
 - technology
 toc: true
-keywords: tensorflow,梦幻西游,弹窗识别,python,自动点击,图像识别
+keywords: tensorflow,梦幻西游,弹窗识别,python,自动点击,图像识别,卷积神经网络
 date: 2020-03-20 15:34:25
 ---
 
@@ -451,6 +451,8 @@ Relying on driver to perform ptx compilation. This message will be only logged o
 ![](http://images.di1shuai.com/FhafeoF-EUhcVGl_l_lxRrzNHytm)
 
 ---
+
+### 回顾
 
 到这里，我们关于**预测**部分的内容就已经完毕，回头看看我们走过的路
 ![](http://images.di1shuai.com/FkislI5cz5t4U_-ezCJsHh4rTuKy)

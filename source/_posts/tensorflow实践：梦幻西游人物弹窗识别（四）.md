@@ -304,6 +304,8 @@ move rel - > (12, -5)
 ```
 
 ---
+
+### 回顾
 到这里，我们的目标已经**基本**完毕
 ![](http://images.di1shuai.com/Fo8_Kl6JeYnguB5APjcmhkHIZdd_)
 为什么说是**基本**呢?
