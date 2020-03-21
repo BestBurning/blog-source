@@ -64,6 +64,18 @@ C:\tools\cuda\include\cudnn.h
 #define CUDNN_VERSION (CUDNN_MAJOR * 1000 + CUDNN_MINOR * 100 + CUDNN_PATCHLEVEL)
 ...
 ```
+
+[梦幻西游](http://xyq.163.com/download/index.html?=xyqload)
+```
+启动方式   多标签版
+分辨率     800x600
+界面风格   暖风
+
+```
+![](http://images.di1shuai.com/FkW3mC0_6XGmeMxLdvqkxMGfcORg)
+![](http://images.di1shuai.com/FtjEhCyk52bg347Wsn0hAre_GiZL)
+
+
 ### 明确问题
 在所有的事情开始之前，我们首先应该**明确**我们要处理一个怎样的**问题**：
 **前、后左右**的朝向识别朝**前**的

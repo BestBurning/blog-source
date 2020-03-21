@@ -5,7 +5,7 @@ date: 2016-10-28
 keywords: kafka,操作
 tags: 
 - kafka
-- bigdata
+- BigData
 categories: 
 - technology
 

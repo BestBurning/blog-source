@@ -5,7 +5,7 @@ date: 2017-2-11
 keywords: hadoop,安装
 tags:
 - hadoop
-- Bigdata
+- BigData
 categories:
 - technology
 
