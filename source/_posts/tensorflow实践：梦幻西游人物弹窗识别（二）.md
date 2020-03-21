@@ -17,14 +17,28 @@ date: 2020-03-19 17:22:59
 本篇将围绕**窗口捕获、屏幕截图、截图切分**讲述[screen.py](https://github.com/BestBurning/mhxy/blob/master/screen.py)代码
 
 ### 环境描述
+[Windows](https://www.microsoft.com/zh-cn/software-download/windows10)
+
 ```
 C:\Users\SF>ver
 Microsoft Windows [版本 10.0.18363.720]
+```
 
-
+[Python](https://www.python.org/downloads/)
+```
 C:\Users\SF>python --version
 Python 3.7.6
 ```
+
+[梦幻西游](http://xyq.163.com/download/index.html?=xyqload)
+```
+启动方式   多标签版
+分辨率     800x600
+界面风格   暖风
+
+```
+![](http://images.di1shuai.com/FkW3mC0_6XGmeMxLdvqkxMGfcORg)
+![](http://images.di1shuai.com/FtjEhCyk52bg347Wsn0hAre_GiZL)
 
 ### 窗口截图
 
