@@ -216,7 +216,6 @@ def auto_click():
             start_time = time.time()
             if sc.task():
                 min_index = dm.model_predict(c.crop_4_img_paths)
-                sc.save_data_img(min_index)
                 target_x , target_y = sc.find_xy_indesktop(c.crop_4_img_paths[min_index])
                 if target_x == 0 and target_y == 0:
                     util.log_title('匹配失败')
