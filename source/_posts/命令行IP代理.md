@@ -3,7 +3,7 @@ title: 命令行IP代理
 tags: ip
 comments: true
 categories: 
-    - utils
+    - technology
 originContent: ''
 toc: false
 keywords: ip,命令行,代理

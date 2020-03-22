@@ -6,7 +6,7 @@ keywords: Hexo,博客
 tags: 
 - Hexo
 categories: 
-- utils
+- technology
 ---
 Now we can use hexo,github and your domain to make a site like here.
 You must prepare something:
