@@ -12,7 +12,7 @@ keywords: tensorflow,梦幻西游,弹窗识别,python,自动点击
 date: 2020-03-19 17:22:59
 ---
 
-由上一篇的思路我们可以定义以下的具体实现步骤
+由[上一篇](https://di1shuai.com/tensorflow%E5%AE%9E%E8%B7%B5%EF%BC%9A%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E4%BA%BA%E7%89%A9%E5%BC%B9%E7%AA%97%E8%AF%86%E5%88%AB%EF%BC%88%E4%B8%80%EF%BC%89.html)的思路我们可以定义以下的具体实现步骤
 ![](http://images.di1shuai.com/FkMKDBPbKXGq3ubgfeTzt2Vtcp-N)
 
 本篇将围绕**窗口捕获、屏幕截图、截图切分**讲述[screen.py](https://github.com/BestBurning/mhxy/blob/master/screen.py)代码
