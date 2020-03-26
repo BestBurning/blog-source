@@ -9,6 +9,7 @@
     "hexo": "^3.2.0",
     "hexo-baidu-url-submit": "0.0.5",
     "hexo-deployer-git": "^2.0.0",
+    "hexo-disqus-proxy": "^2.0.1",
     "hexo-fs": "^2.0.0",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-baidu-sitemap": "^0.1.2",

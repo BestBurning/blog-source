@@ -83,6 +83,12 @@ feed:
 ## Themes: https://hexo.io/themes/
 theme: maupassant
 
+disqus_proxy:
+  shortname: diyishuai
+  username: di1shuai
+  host: DISQUS_PROXY_HOST
+  port: 443
+
 baidu_url_submit:
   count: 100 # 提交最新的一个链接
   host: www.di1shuai.com # 在百度站长平台中注册的域名
