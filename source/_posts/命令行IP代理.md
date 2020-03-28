@@ -1,14 +1,18 @@
 ---
-title: 命令行IP代理
-tags: ip
+title: 各种命令行代理
+tags: 
+    - npm
+    - 代理
 comments: true
 categories: 
     - technology
 originContent: ''
 toc: false
-keywords: ip,命令行,代理
+keywords: 命令行,代理,npm
 date: 2020-02-14 16:46:29
 ---
+
+### terminal 
 
 命令行使用代理
 1. 修改`.zshrc`
@@ -41,7 +45,29 @@ alias unproxy="
 ```
 $ curl https://ip.cn
 >> {"country": "山西省临汾市", "city": "移动"}
+
 $ proxy
+
 $ curl https://ip.cn
 >> {"country": "美国", "city": "Choopa"}
+
+$ unproxy
+
+$ curl https://ip.cn
+>> {"country": "山西省临汾市", "city": "移动"}
 ```
+
+
+
+### npm
+
+代理
+```
+npm config set https-proxy http://server:port
+```
+
+清除
+```
+npm config delete https-proxy
+```
+
