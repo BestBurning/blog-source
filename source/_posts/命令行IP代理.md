@@ -8,13 +8,12 @@ categories:
     - technology
 originContent: ''
 toc: false
-keywords: 命令行,代理,npm
+keywords: 命令行,代理,Mac,Windows,npm
 date: 2020-02-14 16:46:29
 ---
 
-### terminal 
+### Mac Linux terminal 
 
-命令行使用代理
 1. 修改`.zshrc`
 ```
 vim ~/.zshrc
@@ -57,6 +56,19 @@ $ curl https://ip.cn
 >> {"country": "山西省临汾市", "city": "移动"}
 ```
 
+### Windows
+
+代理
+```
+set http_proxy=http://localhost:1080
+set https_proxy=http://localhost:1080
+```
+
+复原
+```
+set http_proxy=
+set https_proxy=
+```
 
 
 ### npm
@@ -66,7 +78,7 @@ $ curl https://ip.cn
 npm config set https-proxy http://server:port
 ```
 
-清除
+复原
 ```
 npm config delete https-proxy
 ```
