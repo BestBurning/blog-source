@@ -86,7 +86,7 @@ theme: maupassant
 disqus_proxy:
   shortname: diyishuai
   username: di1shuai
-  host: DISQUS_PROXY_HOST
+  host: world.di1shuai.com
   port: 443
 
 baidu_url_submit:

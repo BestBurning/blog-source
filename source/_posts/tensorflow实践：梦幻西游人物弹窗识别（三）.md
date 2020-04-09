@@ -424,7 +424,7 @@ def load_and_preprocess_image(path):
   image = tf.io.read_file(path)
   return preprocess_image(image)
 ```
-`model.predict(imgs)`预测了一组照片，返回值为一组照片的**可能行**数组，值越**小(负)**越倾向于**front**，值越**大(正)**越倾向于**others**
+`model.predict(imgs)`预测了一组照片，返回值为一组照片的**可能性**数组，值越**小(负)**越倾向于**front**，值越**大(正)**越倾向于**others**
 
 于是我们**读取模型**并**预测**[上一篇文章](https://di1shuai.com/tensorflow%E5%AE%9E%E8%B7%B5%EF%BC%9A%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E4%BA%BA%E7%89%A9%E5%BC%B9%E7%AA%97%E8%AF%86%E5%88%AB%EF%BC%88%E4%BA%8C%EF%BC%89.html)已经切出来的一组照片
 ```
