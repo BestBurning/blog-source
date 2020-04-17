@@ -1,7 +1,7 @@
 # 指定语言为node_js，nodejs版本stable
 language: node_js
 node_js: 
-  -  "9.8.0"
+  -  "12.16.1"
 
 # 指定构建的分支
 branches:
@@ -24,7 +24,7 @@ before_install:
 
 # 安装依赖
 install:
-  - npm install
+  - yarn install
 
 # 执行脚本，先hexo clean 再 hexo generate，会使用hexo的同学应该不陌生。
 script:
