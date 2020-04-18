@@ -1,6 +1,6 @@
 ---
 title: Win10开放端口让局域网内访问
-tags: Win10
+tags: Windows
 comments: true
 categories: 
 - technology

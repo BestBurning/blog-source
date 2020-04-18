@@ -3,7 +3,7 @@ title: tensorflow实践：梦幻西游人物弹窗识别（一）
 tags: 
 - tensorflow
 - 梦幻西游
-- Win10
+- Windows
 comments: true
 categories: 
 - technology
