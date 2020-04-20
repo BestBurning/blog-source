@@ -81,5 +81,5 @@ mysql> show variables like'character%';
 
 ### 授权外部访问
 ```
-grant all privileges on *.* to 'root'@'%' identified by 'admin';
+grant all privileges on *.* to 'root'@'%';
 ```
