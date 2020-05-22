@@ -3,10 +3,14 @@ title: 使用moviepy进行视频拼接
 tags: 
   - moviepy
   - python
+  - command-util
 comments: true
-categories: technology
+categories: 
+- [technology]
+- [products]
 toc: false
 keywords: moviepy,视频,拼接,python
+donate: true
 date: 2020-03-14 17:36:51
 ---
 
