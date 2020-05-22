@@ -8,7 +8,7 @@ categories:
   - products
 toc: true
 donate: true
-keywords: platform_device_id,go-flutter-plugin
+keywords: platform_device_id,go-flutter-plugin,flutter
 date: 2020-04-22
 ---
 
