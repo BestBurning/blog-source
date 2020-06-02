@@ -34,7 +34,7 @@ script:
 # 上面的脚本执行成功之后执行以下脚本进行deploy
 after_success:
   - git init
-  - git config --global user.name "Bruce"
+  - git config --global user.name "Shea"
   - git config --global user.email "zhushuai026@gmail.com"
   # 替换同目录下的_config.yml文件中GH_TOKEN字符串为travis后台配置的变量
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
