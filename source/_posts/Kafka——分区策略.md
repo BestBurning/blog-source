@@ -15,9 +15,7 @@ date: 2020-07-09 15:50:04
 # Producer
 ## Partitioner 分区器
 
----
-
-- DefaultPartitioner 默认分区器
+### DefaultPartitioner 默认分区器
     - Key == Null
 
     Kafka 2.4之前的无Key策略是循环使用主题的所有分区，将消息以轮询的方式发送到每一个分区上,2.4之后增加了默认的粘性策略即：
@@ -30,13 +28,11 @@ date: 2020-07-09 15:50:04
 
 [【译】Kafka Producer Sticky Partitioner](https://www.cnblogs.com/huxi2b/p/12540092.html)
 
-- RoundRobinPartitioner 轮询分区器
-- UniformStickyPartitioner 粘滞分区器
+### RoundRobinPartitioner 轮询分区器
+### UniformStickyPartitioner 粘滞分区器
 
 # Consumer
 ## Consumer  Assignor
-
----
 
 当ConsumerGroupLeader收到来自CoordinatorGroup的member信息之后，会进行分区，分区策略主要有:
 
