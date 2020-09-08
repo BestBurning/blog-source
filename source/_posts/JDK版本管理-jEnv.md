@@ -120,5 +120,8 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.5+10-LTS, mixed mode)
 ```
 可以看到在`myworld`文件夹中JDK版本被修改为了`11.0`，不过并不影响其他目录，因为`local`的JDK版本信息是记录在所修改文件下夹下的`.java-version`文件中的。
 
+### `jenv enable-plugin export` - 启用export插件
+`export`当前默认版本的`JAVA_HOME`
+
 ## 总结
 使用下来的话，还是没有`nvm`那样方便，需要自己下载各种版本的JDK，需要手动添加到`jenv`中，期待其更便利化的发展
