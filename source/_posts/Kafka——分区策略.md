@@ -16,20 +16,62 @@ date: 2020-07-09 15:50:04
 ## Partitioner 分区器
 
 ### DefaultPartitioner 默认分区器
-    - Key == Null
+- Key == Null
 
-    Kafka 2.4之前的无Key策略是循环使用主题的所有分区，将消息以轮询的方式发送到每一个分区上,2.4之后增加了默认的粘性策略即：
+Kafka `2.4`之前的无Key策略是循环使用主题的所有分区，将消息以轮询的方式发送到每一个分区上,`2.4`之后增加了默认的粘性策略即：
 
-    对于同一批的数据，会用一个随机值对可用partition数量进行取模，然后把这个partition缓存起来
+对于同一批的数据，会用一个随机值对可用partition数量进行取模，然后把这个partition缓存起来
 
-    - Key ≠ Null
+- Key ≠ Null
 
-    Hash key后，对partition数量进行取模
+Hash key后，对partition数量进行取模
+
+```
+    public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster,
+                         int numPartitions) {
+        if (keyBytes == null) {
+            return stickyPartitionCache.partition(topic, cluster);
+        }
+        // hash the keyBytes to choose a partition
+        return Utils.toPositive(Utils.murmur2(keyBytes)) % numPartitions;
+    }
+```
 
 [【译】Kafka Producer Sticky Partitioner](https://www.cnblogs.com/huxi2b/p/12540092.html)
 
 ### RoundRobinPartitioner 轮询分区器
+
+```
+    public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster) {
+        List<PartitionInfo> partitions = cluster.partitionsForTopic(topic);
+        int numPartitions = partitions.size();
+        int nextValue = nextValue(topic);
+        List<PartitionInfo> availablePartitions = cluster.availablePartitionsForTopic(topic);
+        if (!availablePartitions.isEmpty()) {
+            int part = Utils.toPositive(nextValue) % availablePartitions.size();
+            return availablePartitions.get(part).partition();
+        } else {
+            // no partitions are available, give a non-available partition
+            return Utils.toPositive(nextValue) % numPartitions;
+        }
+    }
+
+    private int nextValue(String topic) {
+        AtomicInteger counter = topicCounterMap.computeIfAbsent(topic, k -> {
+            return new AtomicInteger(0);
+        });
+        return counter.getAndIncrement();
+    }
+```
+
 ### UniformStickyPartitioner 粘滞分区器
+```
+    public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster) {
+        return stickyPartitionCache.partition(topic, cluster);
+    }
+
+
+```
 
 # Consumer
 ## Consumer  Assignor
